@@ -1,0 +1,14 @@
+function checkGameOver(score) {
+    return new Promise((resolve) => {
+        console.log("Checking game status...");
+        setTimeout(() => {
+            if (score > 50) {
+                console.log("Continue playing!");
+                resolve(false);
+            } else {
+                console.log("Game over!");
+                resolve(true);
+            }
+        }, 1000);
+    });
+}
