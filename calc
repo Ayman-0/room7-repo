@@ -1,0 +1,10 @@
+function calculateScore() {
+    return new Promise((resolve) => {
+        console.log("Calculating score...");
+        setTimeout(() => {
+            let score = Math.floor(Math.random() * 100);
+            console.log(`Score: ${score}`);
+            resolve(score);
+        }, 1500);
+    });
+}
